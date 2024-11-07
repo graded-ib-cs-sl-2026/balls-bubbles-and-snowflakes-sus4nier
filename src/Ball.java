@@ -13,9 +13,9 @@ class Ball {
     private float radius;
     private float x;
     private float y;
-    /** The number of pixels the ball moves right per frame */
+    /** The number of pixels the ball moves horizontally per frame */
     private float xSpeed;
-    /** The number of pixels the ball moves down per frame */
+    /** The number of pixels the ball moves vertically per frame */
     private float ySpeed;
     /** The color of the inside of the ball */
     private int fillColor;
@@ -36,9 +36,9 @@ class Ball {
 
     /** Fully specified constructor to allow changes to size, position, speed */
     /** Does NOT allow changing color! Need to use setColors() for that. */
-    public Ball(Sketch sketch, float radius, float x, float y, float xspeed, float yspeed) {
+    public Ball(Sketch sketch, float d, float x, float y, float xspeed, float yspeed) {
         this.s = sketch;
-        this.radius = radius;
+        this.radius = d;
         this.x = x;
         this.y = y;
         this.xSpeed = xspeed;
